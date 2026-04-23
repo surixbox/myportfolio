@@ -1,12 +1,10 @@
-# 🚀 3D Portfolio
+# 🚀 3D Portfolio – Suryakiran U
 
 A jaw-dropping developer portfolio packed with interactive 3D animations, buttery smooth transitions, and a space-themed aesthetic. Not your average portfolio template! This one has a fully interactive 3D keyboard where each keycap is a skill.
 
 > **Free to use!** This portfolio is open source. If you use it, a credit/link back would be really appreciated 🙏
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Naresh-Khatri/3d-portfolio)
-
-![Portfolio Preview](https://github.com/Naresh-Khatri/Portfolio/blob/main/public/assets/projects-screenshots/portfolio/landing.png?raw=true)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/surixbox/3d-portfolio)
 
 ## ✨ Features
 
@@ -42,24 +40,24 @@ A jaw-dropping developer portfolio packed with interactive 3D animations, butter
 
 1. **Clone the repository:**
 
-    ```bash
-    git clone https://github.com/Naresh-Khatri/3d-portfolio.git
+```bash
+    git clone https://github.com/surixbox/3d-portfolio.git
     cd 3d-portfolio
-    ```
+```
 
 2. **Install dependencies:**
 
-    ```bash
+```bash
     pnpm install
-    ```
+```
 
 3. **Set up environment variables:**
 
     Copy `.env.example` to `.env.local` and fill in the values:
 
-    ```bash
+```bash
     cp .env.example .env.local
-    ```
+```
 
     | Variable | Required | Description |
     |---|---|---|
@@ -70,11 +68,28 @@ A jaw-dropping developer portfolio packed with interactive 3D animations, butter
 
 4. **Run the development server:**
 
-    ```bash
+```bash
     pnpm dev
-    ```
+```
 
 5. Open [http://localhost:3000](http://localhost:3000) and see the magic ✨
+
+---
+
+## 🎨 About Me
+
+```ts
+const me = {
+  name: "Suryakiran U",
+  email: "devpytech@gmail.com",
+  site: "https://suryakiranportfolio.vercel.app",
+  github: "https://github.com/surixbox",
+  linkedin: "https://linkedin.com/in/devpytech",
+  role: "Full Stack Developer & CSE Student",
+  education: "BE Computer Science @ EASA College (2022–2026)",
+  skills: ["React", "Angular", "NestJS", "Django", "Python", "TypeScript", "PostgreSQL"],
+};
+```
 
 ---
 
@@ -94,15 +109,14 @@ const config = {
   email: "you@example.com",
   site: "https://yoursite.com",
 
-  // GitHub stars button in the header
   githubUsername: "your-github-username",
   githubRepo: "your-repo-name",
 
   social: {
-    twitter: "https://x.com/you",
+    twitter: "",
     linkedin: "https://linkedin.com/in/you",
-    instagram: "https://instagram.com/you",
-    facebook: "https://facebook.com/you",
+    instagram: "",
+    facebook: "",
     github: "https://github.com/you",
   },
 };
@@ -125,44 +139,25 @@ The 3D keyboard keycaps are baked into a Spline file. To update the skills displ
 1. **Import** the `public/assets/skills-keyboard.spline` file into [Spline](https://spline.design/)
 2. **Unhide** the keycap objects you want to edit
 3. **Update** the logo images on each keycap to your new skill icons
-4. **Rename** each keycap object to match the skill's `name` field in `src/data/constants.ts` (e.g. `js`, `react`, `docker`)
+4. **Rename** each keycap object to match the skill's `name` field in `src/data/constants.ts` (e.g. `react`, `angular`, `python`)
 5. **Hide** all keycap objects again
 6. **Export** the scene and overwrite `public/assets/skills-keyboard.spline`
 
 After updating the Spline file, make sure `src/data/constants.ts` has matching entries for every skill on the keyboard:
 
 ```ts
-// Each keycap object name in Spline must match a key in SKILLS
 export const SKILLS: Record<SkillNames, Skill> = {
-  js: { name: "js", label: "JavaScript", shortDescription: "...", ... },
   react: { name: "react", label: "React", shortDescription: "...", ... },
-  // ... add/remove entries to match your keyboard
+  angular: { name: "angular", label: "Angular", shortDescription: "...", ... },
+  // ... entries must match your keyboard keycap names
 };
 ```
-
-The `SkillNames` enum, `SKILLS` record, and the Spline keycap names must all stay in sync for the keyboard interactions to work correctly.
-
----
-
-## 🔌 Realtime Features (Optional)
-
-The portfolio supports optional realtime features powered by a **separate backend API**:
-
-- 🖱️ **Live cursors** — See other visitors' cursors in realtime
-- 👥 **Online presence** — Shows who's currently on the site
-- 💬 **Chat** — Live chat between visitors
-
-These features activate automatically when the `NEXT_PUBLIC_WS_URL` environment variable is set. Without it, the portfolio works perfectly fine as a static site — no realtime features, no backend dependency.
-
-> [!NOTE]
-> The backend API is **not open source**. This is intentional! Too many people have cloned the portfolio and claimed they built it from scratch. The realtime server stays private to keep the live experience unique make make it standout.
-
 
 ---
 
 ## 🚀 Deployment
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Naresh-Khatri/3d-portfolio)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/surixbox/3d-portfolio)
 
 This site is deployed on **Vercel**. To deploy your own:
 
@@ -183,4 +178,4 @@ If you'd like to contribute or suggest improvements, feel free to open an issue 
 
 This project is open source and available under the [MIT License](LICENSE).
 
-If you use this portfolio, a credit or link back to the [original repo](https://github.com/Naresh-Khatri/3d-portfolio) would be much appreciated ❤️
+> Built by [Suryakiran U](https://suryakiranportfolio.vercel.app) — adapted from the original [3d-portfolio](https://github.com/Naresh-Khatri/3d-portfolio)

@@ -15,7 +15,7 @@ const ExperienceSection = () => {
         <SectionHeader
           id="experience"
           title="Experience"
-          desc="My professional journey."
+          desc="Hands-on experience building real-world, production-ready applications."
           className="mb-12 md:mb-20 mt-0"
         />
 
@@ -75,7 +75,7 @@ const ExperienceCard = ({
           </div>
         </CardHeader>
         <CardContent className="space-y-6">
-          <ul className="list-disc list-outside ml-4 space-y-2 text-base text-muted-foreground leading-relaxed">
+          <ul className="list-disc list-outside ml-4 space-y-2 text-sm md:text-base text-muted-foreground leading-relaxed">
             {experience.description.map((point, i) => (
               <li key={i}>{point}</li>
             ))}
