@@ -34,12 +34,12 @@ githubRepo: "3d-portfolio",
   get ogImg() {
     return this.site + "/assets/seo/og-image.png";
   },
-  social: {
-    twitter: "",           // leave empty if you don't have one
-    linkedin: "https://www.linkedin.com/in/devpytech",
-    instagram: "https://www.instagram.com/ft.suri",         // leave empty if you don't have one
-    facebook: "",          // leave empty if you don't have one
-    github: "https://github.com/surixbox",
-  },
+social: {
+  twitter: "",
+  linkedin: "https://www.linkedin.com/in/devpytech",
+  instagram: "https://www.instagram.com/ft.suri",
+  facebook: "",
+  github: "https://github.com/surixbox",
+},
 };
 export { config };
